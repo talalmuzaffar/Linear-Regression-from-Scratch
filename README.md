@@ -1,26 +1,76 @@
-# Linear Regression Model
+# Linear Regression from Scratch 📊
 
-This is a simple implementation of a linear regression model in Python using NumPy. The model can be trained on a given dataset and used to make predictions on new data.
+A pure Python implementation of Linear Regression using only NumPy, built from scratch. This implementation provides a clear understanding of the underlying mathematics and optimization techniques used in linear regression.
 
-## Features
+## 🌟 Features
 
-- **Simple Implementation**: The code provides a straightforward implementation of linear regression using gradient descent optimization.
-- **Customizable Parameters**: You can specify the learning rate and the number of iterations for training the model.
-- **Training and Testing**: It includes methods for training the model with labeled data and making predictions on new data.
-- **Get Parameters**: You can retrieve the trained parameters (thetas) of the model.
+- **Pure Implementation**: Built using only NumPy, no machine learning libraries
+- **Gradient Descent**: Custom implementation of optimization algorithm
+- **Configurable Training**: Adjustable learning rate and iteration count
+- **Model Parameters**: Access to trained parameters (thetas)
+- **Prediction Support**: Methods for training and testing on new data
 
-## Usage
+## 🚀 Getting Started
 
-To use the linear regression model, follow these steps:
-
-1. Import the `LinearRegression` class from the provided code.
-2. Prepare your dataset with features (`X_train`) and labels (`y_train`).
-3. Create an instance of the `LinearRegression` class, optionally specifying the learning rate and the number of iterations.
-4. Train the model by calling the `train()` method with your training data.
-5. Optionally, test the trained model using the `test()` method with new data.
-6. Retrieve the trained parameters using the `get_parameters()` method.
-
-## Requirements
+### Prerequisites
 
 - Python 3.x
 - NumPy
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/talalmuzaffar/Linear-Regression-from-Scratch.git
+   cd Linear-Regression-from-Scratch
+   ```
+
+2. Install NumPy if not already installed:
+   ```bash
+   pip install numpy
+   ```
+
+## 💡 Usage
+
+1. Import the LinearRegression class:
+   ```python
+   from linear_regression import LinearRegression
+   ```
+
+2. Prepare your dataset:
+   ```python
+   # X_train: features
+   # y_train: labels
+   ```
+
+3. Create and train the model:
+   ```python
+   model = LinearRegression(learning_rate=0.01, iterations=1000)
+   model.train(X_train, y_train)
+   ```
+
+4. Make predictions:
+   ```python
+   predictions = model.test(X_test)
+   ```
+
+5. Access model parameters:
+   ```python
+   parameters = model.get_parameters()
+   ```
+
+## 📁 Project Structure
+
+```
+Linear-Regression-from-Scratch/
+├── linear_regression.py  # Main implementation
+└── README.md            # Project documentation
+```
+
+## 👥 Authors
+
+- Talal Muzaffar - [GitHub](https://github.com/talalmuzaffar)
+
+## 📞 Support
+
+For issues and questions, please [open an issue](https://github.com/talalmuzaffar/Linear-Regression-from-Scratch/issues) on GitHub.
