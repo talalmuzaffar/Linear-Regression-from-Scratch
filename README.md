@@ -63,8 +63,12 @@ A pure Python implementation of Linear Regression using only NumPy, built from s
 
 ```
 Linear-Regression-from-Scratch/
-├── linear_regression.py  # Main implementation
-└── README.md            # Project documentation
+├── linear_regression.py              # Entry point: imports LinearRegression, example test code (commented out)
+├── linear_regression_from_scratch/
+│   ├── __init__.py
+│   └── model.py                      # Main implementation (LinearRegression class)
+├── requirements.txt                  # Python dependencies
+└── README.md                         # Project documentation
 ```
 
 ## 👥 Authors
